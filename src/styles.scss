@@ -1,1 +1,156 @@
-/* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.fc-white{
+    color: white;
+}
+
+.fc-purple{
+    color: #4B47FF
+}
+
+.fs-64{
+    font-size: 64px;
+}
+
+.fs-90{
+    font-size: 90px;
+}
+
+.rotate-270{
+    rotate: 270deg;
+}
+
+.btn-1{
+    display: flex;
+    align-self: center;
+    background-color: #00BEE8;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 28px;
+    max-width: 165px;
+    height: 60px;
+    align-items: center;
+    transition: all 125ms ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #4B47FF;
+        transition: all 125ms ease-in-out;
+    }
+}
+
+.btn-2{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: #00BEE8;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 28px;
+    max-width: 200px;
+    height: 60px;
+    align-items: center;
+    transition: all 125ms ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: center;
+        padding-right: 30px;
+        height: 70px;
+        background-color: #4B47FF;
+        transition: all 125ms ease-in-out;
+    }
+}
+
+.btn-3{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #00BEE8;
+    border-radius: 15px;
+    color: white;
+    font-size: 28px;
+    min-width: 150px;
+    height: 60px;
+    align-items: center;
+    transition: all 125ms ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        justify-content: center;
+        background-color:#1CE6B6;
+        transition: all 125ms ease-in-out;
+    }
+}
+
+.btn-4{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: #4B47FF;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: white;
+    font-size: 28px;
+    min-width: 150px;
+    height: 60px;
+    align-items: center;
+    transition: all 125ms ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        justify-content: center;
+        background-color: transparent;
+        border: 1px solid #00BEE8;
+        transition: all 125ms ease-in-out;
+    }
+}
+
+.btn-5{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: #4B47FF;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: white;
+    font-size: 28px;
+    min-width: 150px;
+    height: 60px;
+    align-items: center;
+    transition: all 125ms ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        justify-content: center;
+        background-color: transparent;
+        border: 1px solid #00BEE8;
+        transition: all 125ms ease-in-out;
+    }
+}
+
+
+

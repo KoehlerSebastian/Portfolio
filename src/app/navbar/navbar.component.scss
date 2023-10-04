@@ -1,0 +1,46 @@
+.navbar-container{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #141D2F;
+    height: 109px;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    width: 100%;
+    z-index: 20;
+
+}
+
+.navbar-logo{
+display: flex;
+height: 250px;
+object-fit: contain;
+}
+
+.navbar-links{
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    gap: 30px;
+
+    a{
+        color: white;
+        text-decoration: none;
+
+        &:active{
+            color: white;
+        }
+
+        &:hover{
+            color: #00BEE8
+        }
+
+
+    }
+
+    
+}
+

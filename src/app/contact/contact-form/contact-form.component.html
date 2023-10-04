@@ -1,0 +1,29 @@
+<form action="https://sebastian-koehler.developerakademie.net/send_mail/send_mail.php" method="post">
+  <div>
+    <input type="text" name="name" placeholder="Your name">
+    <div class="wrong-input">invalid input</div>
+  </div>
+
+  <div>
+    <input class="input-border-red" type="email" name="email" placeholder="Your email">
+    <div class="wrong-input">invalid input</div>
+  </div>
+
+  <div class="textarea-container">
+    <textarea class="styled-textarea" id="nachricht" name="nachricht" rows="5" cols="40"></textarea>
+    <div class="wrong-input">invalid input</div>
+  </div>
+
+
+  <div class="checkbox-wrapper-39">
+    <label>
+      <input type="checkbox" required />
+      <span class="checkbox"></span>
+    </label>
+    <div>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</div>
+  </div>
+
+
+  <button [disabled]="loading" class="btn-5">Send message</button>
+
+</form>

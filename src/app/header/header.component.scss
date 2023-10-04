@@ -1,0 +1,47 @@
+#header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #141D2F;
+    font-family: "Open Sans", sans-serif;
+}
+
+.headline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.headline-left{
+    height: 100%;
+    margin-top: 30px;
+}
+
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.header-headline {
+    font-size: 128px;
+}
+
+
+.green-shining{
+    position: absolute;
+    height: 573px;
+    object-fit: contain;
+    right: 0;
+}
+
+.blue-shining{
+    position: absolute;
+    height: 608px;
+    object-fit: contain;
+    left: 0; 
+}

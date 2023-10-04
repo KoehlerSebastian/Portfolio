@@ -1,0 +1,57 @@
+#about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+    background-color: #1A2743 ;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+}
+
+.about-me-container{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.about-me-headline{
+    display: flex;
+    color: white;
+    font-size: 90px;
+    margin-bottom: 0;
+    margin: 0;
+}
+
+.about-me-text{
+    display: flex;
+    color: white;
+    line-height: 1.5rem;
+}
+
+
+.about-me-photo{
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    display: flex;
+
+    img{
+        display: flex;
+        object-fit: contain;
+        align-self: flex-end;
+        z-index: 1;
+        height: 600px;
+    }
+
+}
+
+.photo-shadow{
+    position: absolute;
+    left: 200px;
+    height: 560px;
+    bottom: -50px;
+    z-index: 0;
+}

@@ -1,0 +1,22 @@
+.social-container{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.green-line{
+    display: flex;
+    width: 5%;
+    height: 5px;
+    background-color: greenyellow;
+    border-radius: 25px;
+}
+
+.social-link-icons{
+    display: flex;
+    gap: 32px;
+    object-fit: contain;
+
+}

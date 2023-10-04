@@ -1,0 +1,159 @@
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 64px;
+}
+
+.d-none{
+    display: none!important;
+}
+
+
+.portfolio-headline-container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.headline-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.purple-line{
+    display: flex;
+    height: 4px;
+    border-radius: 25px;
+    padding-left: 5%;
+    background-color: #4B47FF;
+}
+
+.headline-portfolio{
+    display: flex;
+    font-weight: bold;
+    font-size: 90px;
+    padding-left: 5%;
+}
+
+.portfolio-description{
+    display: flex;
+    padding-left: 10%;
+}
+
+.projects-container{
+    display: flex;
+    object-fit: contain;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+
+}
+
+.projects-row{
+    display: flex;
+    gap: 64px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.project-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15%;
+    border: 1px solid #00BEE8;
+    border-radius: 25px;
+    width: 20%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+.button-row{
+    padding-top: 20%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 25%;
+}
+
+.project-description-container{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.project-container:hover .project-description-container {
+    display: flex;
+}
+
+
+.project-description{
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: white;
+}
+
+.project-headline{
+    padding-top: 10%;
+    color: white;
+    font-weight: bold;
+    color:#4B47FF;
+    font-size: 2.5rem;
+}
+
+.project-description-text{
+    display: flex;
+    color: black;
+    font-size: 1.5rem;
+
+}
+
+.coding-description{
+    display: flex;
+    justify-content: center;
+    color: #00BEE8;
+    font-size: 1.5rem;
+}
+
+
+
+.project-container:hover .project-img {
+    transform: scale(2); /* Vergrößert das Bild um 200% */
+    transition: transform 0.3s ease; /* Fügt einen Übergangseffekt hinzu */
+}
+
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Hier 0.5 für 50% Transparenz anpassen */
+    opacity: 0; /* Initial unsichtbar */
+    transition: opacity 0.3s ease; /* Übergangseffekt für Transparenz */
+}
+
+.project-container:hover .image-overlay {
+    opacity: 1; /* Anzeigen des Overlays beim Hover */
+}
