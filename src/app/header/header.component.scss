@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 32px;
+    margin-top: 5%;
 }
 
 .headline-left{
@@ -44,4 +45,18 @@
     height: 608px;
     object-fit: contain;
     left: 0; 
+}
+
+@media screen and (max-width: 1250px) {
+    .headline-left {
+        font-size: 4rem;
+    }
+
+    .header-headline{
+        font-size: 5rem;
+    }
+
+    .header-bottom-text{
+        font-size: 3rem;
+    }
 }

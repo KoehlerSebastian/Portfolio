@@ -2,7 +2,8 @@
     display: flex;
     padding-top: 64px;
     justify-content: space-between;
-    padding-left: 10%;
+    padding-left: 10%; 
+    gap: 5%;                                                                                        
 }
 
 .skill-container{
@@ -34,8 +35,8 @@
 .skills-description-container{
     display: flex;
     flex-direction: column;
-    height: 100%;
     gap: 32px;
+    justify-content: center;
 }
 
 .skills-headline-container{
@@ -71,3 +72,31 @@
     border-radius: 25px;
     background-color:#1CDAE6;
 }
+
+@media screen and (max-width: 1700px) {
+    .skills-description {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .headline-white{
+        font-size: 4rem;
+    }
+    .skill-container{
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+    
+    .skill-row{
+        display: flex;
+        justify-content: flex-start;
+        color: white;
+        gap: 32px;
+    }
+    
+
+  }
+  
+  

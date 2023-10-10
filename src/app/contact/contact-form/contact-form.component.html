@@ -1,16 +1,16 @@
-<form action="https://sebastian-koehler.developerakademie.net/send_mail/send_mail.php" method="post">
+<form ngNativeValidate (submit)="sendMail()" #myForm>
   <div>
-    <input type="text" name="name" placeholder="Your name">
+    <input required type="text" name="name" placeholder="Your name" #nameField>
     <div class="wrong-input">invalid input</div>
   </div>
 
   <div>
-    <input class="input-border-red" type="email" name="email" placeholder="Your email">
+    <input required class="input-border-red" type="email" name="email" placeholder="Your email" #emailField>
     <div class="wrong-input">invalid input</div>
   </div>
 
-  <div class="textarea-container">
-    <textarea class="styled-textarea" id="nachricht" name="nachricht" rows="5" cols="40"></textarea>
+  <div required class="textarea-container">
+    <textarea class="styled-textarea" id="nachricht" name="nachricht" rows="5" cols="40" #textField></textarea>
     <div class="wrong-input">invalid input</div>
   </div>
 
@@ -24,6 +24,6 @@
   </div>
 
 
-  <button [disabled]="loading" class="btn-5">Send message</button>
+  <button class="btn-5" #sendButton>Send message</button>
 
 </form>

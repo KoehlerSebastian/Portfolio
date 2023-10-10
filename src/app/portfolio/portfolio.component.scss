@@ -157,3 +157,19 @@
 .project-container:hover .image-overlay {
     opacity: 1; /* Anzeigen des Overlays beim Hover */
 }
+
+@media screen and (max-width: 1400px) {
+    .project-container{
+        width: 40%;
+    }
+  }
+  
+  
+
+@media screen and (max-width: 1050px) {
+    .headline-portfolio{
+        font-size: 4rem;
+    }
+  }
+  
+  

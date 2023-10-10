@@ -12,6 +12,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ScrollButtonComponent } from './scroll-button/scroll-button.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,16 @@ import { ImpressumComponent } from './impressum/impressum.component';
     PortfolioComponent,
     ContactComponent,
     ContactFormComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    ScrollButtonComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
