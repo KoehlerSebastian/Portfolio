@@ -147,3 +147,8 @@ form{
   }
 }
 
+@media screen and (max-width: 800px) {
+  input::placeholder{
+    font-size: 1rem!important;  
+  }
+}
