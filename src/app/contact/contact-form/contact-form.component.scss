@@ -22,6 +22,11 @@ form{
             color: white;
             font-size: 1.5rem;
         }
+
+        &:hover{
+          cursor: pointer;
+          border: 1px solid #24c78e;
+        }
     }
 
     textarea{
@@ -33,7 +38,14 @@ form{
     border-radius: 10px;
     background-color: transparent;
     color: white;
+
+    &:hover{
+      cursor: pointer;
+      border: 1px solid #24c78e;
     }
+    }
+
+
 }
 
 

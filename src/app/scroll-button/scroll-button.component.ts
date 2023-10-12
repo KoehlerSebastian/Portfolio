@@ -21,7 +21,7 @@ export class ScrollButtonComponent {
     onScroll(event: Event): void {
       const scrollDownButton = document.getElementById('scroll-down-button');
       
-      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight || window.innerWidth <= 800) {
         scrollDownButton!.style.display = "none";
       } else {
         scrollDownButton!.style.display = 'flex';

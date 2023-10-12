@@ -1,0 +1,26 @@
+<form ngNativeValidate (submit)="sendMail()" #myForm>
+    <div>
+      <input required type="text" name="name" placeholder="Your name" #nameField>
+    </div>
+  
+    <div>
+      <input required type="email" name="email" placeholder="Your email" #emailField>
+    </div>
+  
+    <div required class="textarea-container">
+      <textarea class="styled-textarea" id="nachricht" name="nachricht" rows="5" cols="40" #textField></textarea>
+    </div>
+  
+  
+    <div class="checkbox-wrapper-39">
+      <label>
+        <input type="checkbox" required />
+        <span class="checkbox"></span>
+      </label>
+      <div>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</div>
+    </div>
+  
+  
+    <button class="btn-5" #sendButton>Send message</button>
+  
+  </form>

@@ -29,6 +29,14 @@
     text-align: center;
     z-index: 1;
     font-weight: bold;
+    transition: all 125ms ease-in-out;
+
+
+    &:hover{
+        transform: translateY(1rem);
+        transition: all 125ms ease-in-out;
+        cursor: pointer;
+    }
 }
 
 
@@ -73,6 +81,12 @@
     background-color:#1CDAE6;
 }
 
+#skills-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 @media screen and (max-width: 1700px) {
     .skills-description {
         width: 90%;
@@ -98,5 +112,40 @@
     
 
   }
+
+  @media screen and (min-width: 800px) {
+    #skills-mobile {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    #skills {
+        display: none;
+    }
+
+    .skill-row{
+        padding-left: 10%;
+    }
+
+    .skills-description-container{
+        padding-left: 10%;
+    }
+}
   
-  
+@media screen and (max-width: 450px) {
+    .skill {
+            object-fit: contain;
+            min-width: 25%;
+
+            img{
+                height: 50px;
+            }
+            
+        
+    }
+
+
+}

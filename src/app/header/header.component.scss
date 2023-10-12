@@ -5,6 +5,7 @@
     flex-direction: column;
     background-color: #141D2F;
     font-family: "Open Sans", sans-serif;
+    margin-top: 109px;
 }
 
 .headline-container {
@@ -13,11 +14,13 @@
     justify-content: center;
     margin-bottom: 32px;
     margin-top: 5%;
+    z-index: 5;
 }
 
 .headline-left{
     height: 100%;
     margin-top: 30px;
+    padding-left: 1rem;
 }
 
 
@@ -58,5 +61,63 @@
 
     .header-bottom-text{
         font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .headline-left {
+        font-size: 3rem;
+        display: flex;
+    }
+
+    .header-headline{
+        font-size: 4rem;
+    }
+
+    .header-bottom-text{
+        font-size: 2.7rem;
+    }
+
+    .green-shining{
+        height: 253px;
+    }
+    
+    .blue-shining{
+
+        height: 258px;
+
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .headline-left {
+        font-size: 2.5rem;
+        padding-left: 1.5rem;
+
+    }
+
+    .header-headline{
+        font-size: 3rem;
+    }
+
+    .header-bottom-text{
+        font-size: 2.05rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .headline-left {
+        font-size: 1.5rem;
+        padding-left: 1.5rem;
+
+    }
+
+    .header-headline{
+        font-size: 2rem;
+    }
+
+    .header-bottom-text{
+        font-size: 1.35rem;
     }
 }

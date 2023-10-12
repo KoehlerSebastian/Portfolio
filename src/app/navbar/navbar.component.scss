@@ -40,7 +40,83 @@ object-fit: contain;
 
 
     }
-
-    
 }
 
+.navbar-container-mobile{
+    position: fixed;
+    display: flex;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    min-height: 100%;
+    width: 100vw;
+    z-index: 10;
+
+}
+
+.navbar-menu-mobile{
+    display: flex;
+    z-index: 10;
+    font-size: 3rem;
+    width: 100%;
+
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        color: white;
+        width: 100vw;
+        gap: 64px;
+        padding: 0;
+        margin: 0;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.close-icon{
+    width: 0;
+}
+
+@media screen and (min-width: 885px) {
+    .burger-menu {
+        display: none; 
+    }
+}
+
+
+
+@media screen and (max-width: 885px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex; 
+        color: white;
+        font-size: 3rem;
+        cursor: pointer;
+
+    }
+
+    .navbar-container{
+        padding-left: 0;
+        padding-right: 2rem;
+    
+    }
+}
+
+/* Fügen Sie Ihrer CSS-Datei diese Regel hinzu, um das mobile Menü zu öffnen oder zu schließen */
+.navbar-container-mobile.open {
+    transform: translateX(0);
+}
+
+.navbar-container-mobile {
+    /* Andere Stile für das mobile Menü */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}

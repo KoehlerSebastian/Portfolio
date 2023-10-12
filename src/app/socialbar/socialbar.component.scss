@@ -19,4 +19,13 @@
     gap: 32px;
     object-fit: contain;
 
+    transition: all 125ms ease-in-out;
+
+    img:hover{
+        transform: translateY(0.3rem);
+        transition: all 125ms ease-in-out;
+        cursor: pointer;
+    }
+  
+
 }

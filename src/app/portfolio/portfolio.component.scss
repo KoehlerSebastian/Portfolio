@@ -172,4 +172,15 @@
     }
   }
   
+
+  @media screen and (max-width: 800px) {
+    .projects-row{
+        flex-wrap: wrap;
+    }
+
+    .project-container{
+        width: 80%;
+    }
+  }
+  
   
