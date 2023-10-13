@@ -32,6 +32,13 @@
         color: white;
         top: 65%;
         left: 12%;
+        cursor: pointer;
+        transition: all 125ms ease-in-out;
+
+        &:hover{
+            color: #00BEE8;
+            transition: all 125ms ease-in-out;
+        }
     }
 }
 

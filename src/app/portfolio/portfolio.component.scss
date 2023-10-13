@@ -158,9 +158,32 @@
     opacity: 1; /* Anzeigen des Overlays beim Hover */
 }
 
+
+@media screen and (max-width: 2400px) {
+    .project-container{
+        width: 40%;
+    }
+}
+
+
+
 @media screen and (max-width: 1400px) {
     .project-container{
         width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 1320px) {
+    .headline-portfolio{
+        font-size: 4rem;
+    }
+
+    .projects-row{
+        flex-wrap: wrap;
+    }
+
+    .project-container{
+        width: 80%;
     }
   }
   
@@ -169,6 +192,14 @@
 @media screen and (max-width: 1050px) {
     .headline-portfolio{
         font-size: 4rem;
+    }
+
+    .projects-row{
+        flex-wrap: wrap;
+    }
+
+    .project-container{
+        width: 80%;
     }
   }
   

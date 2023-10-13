@@ -13,6 +13,7 @@ import { ContactFormComponent } from './contact/contact-form/contact-form.compon
 import { ImpressumComponent } from './impressum/impressum.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScrollButtonComponent } from './scroll-button/scroll-button.component';
+import { ImpressPageComponent } from './impressum/impress-page/impress-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ScrollButtonComponent } from './scroll-button/scroll-button.component';
     ContactComponent,
     ContactFormComponent,
     ImpressumComponent,
-    ScrollButtonComponent
+    ScrollButtonComponent,
+    ImpressPageComponent
 
   ],
   imports: [
