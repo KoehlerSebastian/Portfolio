@@ -1,4 +1,4 @@
-import { Component, Renderer2, ElementRef} from '@angular/core';
+import { Component, Renderer2, ElementRef } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -29,8 +29,8 @@ export class NavbarComponent {
     }
   }
 
-   // Add this function to close the menu when a link is clicked
-   closeMenu() {
+  // Add this function to close the menu when a link is clicked
+  closeMenu() {
     if (this.isMenuOpen) {
       this.isMenuOpen = false;
     }

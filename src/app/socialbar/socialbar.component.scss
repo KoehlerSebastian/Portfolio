@@ -1,4 +1,4 @@
-.social-container{
+.social-container {
     margin-top: 32px;
     display: flex;
     align-items: center;
@@ -6,7 +6,7 @@
 }
 
 
-.green-line{
+.green-line {
     display: flex;
     width: 5%;
     height: 5px;
@@ -14,18 +14,18 @@
     border-radius: 25px;
 }
 
-.social-link-icons{
+.social-link-icons {
     display: flex;
     gap: 32px;
     object-fit: contain;
 
     transition: all 125ms ease-in-out;
 
-    img:hover{
+    img:hover {
         transform: translateY(0.3rem);
         transition: all 125ms ease-in-out;
         cursor: pointer;
     }
-  
+
 
 }

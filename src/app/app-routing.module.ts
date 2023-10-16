@@ -4,8 +4,8 @@ import { ImpressPageComponent } from './impressum/impress-page/impress-page.comp
 import { DataPolicyComponent } from './data-policy/data-policy.component';
 
 const routes: Routes = [
-  {path: 'impress', component: ImpressPageComponent},
-  {path: 'data-policy', component: DataPolicyComponent}
+  { path: 'impress', component: ImpressPageComponent },
+  { path: 'data-policy', component: DataPolicyComponent }
 
 ];
 

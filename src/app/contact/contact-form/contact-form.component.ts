@@ -14,6 +14,7 @@ export class ContactFormComponent {
   @ViewChild('checkBox') checkBox!: ElementRef; // Haken (Checkbox)
   loading = false;
   public formData: any = {};
+  showOverlay = false;
 
   checkFieldsValid() {
     const name = this.nameField.nativeElement.value;
@@ -41,19 +42,20 @@ export class ContactFormComponent {
   async sendMail() {
     const sendButton = this.sendButton.nativeElement;
     sendButton.disabled = true;
-
     if (this.checkFieldsValid()) {
       const formData = this.prepareFormData();
-
       try {
         await this.sendFormDataToServer(formData);
+        sendButton.textContent = 'wird gesendet!';
+        this.showOverlay = true;
+        setTimeout(() => { this.showOverlay = false; }, 3000);
       } catch (error) {
-        // Handle error
+        console.log("Error:", error);
       } finally {
         sendButton.disabled = false;
+        sendButton.textContent = 'Nachricht senden';
       }
     } else {
-      // Zeigen Sie eine Fehlermeldung an oder führen Sie andere Maßnahmen durch, wenn die Felder nicht gültig sind.
     }
   }
 

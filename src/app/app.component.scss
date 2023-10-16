@@ -1,11 +1,11 @@
 html {
-    scroll-behavior: smooth;
-  }
-.mainpage-container{
-    display: flex;
-    background-color: #141D2F;
-    flex-direction: column;
-    gap: 32px;
-    overflow: hidden;
+  scroll-behavior: smooth;
 }
 
+.mainpage-container {
+  display: flex;
+  background-color: #141D2F;
+  flex-direction: column;
+  gap: 32px;
+  overflow: hidden;
+}

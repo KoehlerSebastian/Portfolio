@@ -11,7 +11,7 @@ export class PortfolioComponent {
 
 
 
-openProject(link:string){
-  window.open(link , '_blank')
-}
+  openProject(link: string) {
+    window.open(link, '_blank')
+  }
 }

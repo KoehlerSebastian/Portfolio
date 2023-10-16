@@ -1,4 +1,4 @@
-.navbar-container{
+.navbar-container {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -14,27 +14,27 @@
 
 }
 
-.navbar-logo{
-display: flex;
-height: 250px;
-object-fit: contain;
+.navbar-logo {
+    display: flex;
+    height: 250px;
+    object-fit: contain;
 }
 
-.navbar-links{
+.navbar-links {
     display: flex;
     color: white;
     font-size: 1.5rem;
     gap: 30px;
 
-    a{
+    a {
         color: white;
         text-decoration: none;
 
-        &:active{
+        &:active {
             color: white;
         }
 
-        &:hover{
+        &:hover {
             color: #00BEE8
         }
 
@@ -42,7 +42,7 @@ object-fit: contain;
     }
 }
 
-.navbar-container-mobile{
+.navbar-container-mobile {
     position: fixed;
     display: flex;
     background-color: rgba($color: #000000, $alpha: 0.9);
@@ -52,14 +52,14 @@ object-fit: contain;
 
 }
 
-.navbar-menu-mobile{
+.navbar-menu-mobile {
     display: flex;
     z-index: 10;
     font-size: 3rem;
     width: 100%;
 
 
-    ul{
+    ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -72,19 +72,19 @@ object-fit: contain;
         margin: 0;
     }
 
-    a{
+    a {
         color: white;
         text-decoration: none;
     }
 }
 
-.close-icon{
+.close-icon {
     width: 0;
 }
 
 @media screen and (min-width: 885px) {
     .burger-menu {
-        display: none; 
+        display: none;
     }
 }
 
@@ -96,17 +96,17 @@ object-fit: contain;
     }
 
     .burger-menu {
-        display: flex; 
+        display: flex;
         color: white;
         font-size: 3rem;
         cursor: pointer;
 
     }
 
-    .navbar-container{
+    .navbar-container {
         padding-left: 0;
         padding-right: 2rem;
-    
+
     }
 }
 
