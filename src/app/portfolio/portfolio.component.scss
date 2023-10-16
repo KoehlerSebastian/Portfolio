@@ -93,6 +93,7 @@
     display: none;
     flex-direction: column;
     height: 100%;
+    width: 100%;
     justify-content: space-between;
 
 }
@@ -125,6 +126,8 @@
     display: flex;
     color: black;
     font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
 
 }
 
@@ -214,4 +217,61 @@
     }
   }
   
-  
+  @media screen and (max-width: 650px) {
+
+    .btn-3{
+        font-size: 1.3rem;
+        min-width: 120px!important;
+    }
+
+    .btn-4{
+        font-size: 1.3rem;
+        min-width: 120px;
+    }
+
+    .button-row{
+        padding-top: 20%;
+        gap: 10%;
+    }
+
+    .project-description{
+        gap: 16px;
+    }
+
+    .project-description-text
+    {
+        font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+
+    .project-container{
+        width: 90%;
+    }
+  }
+
+    @media screen and (max-width: 380px) {
+
+        .project-headline{
+            padding-top: 1rem;
+            font-size: 2rem;
+        }
+
+        .button-row{
+            padding-top: 5%;
+            gap: 10%;
+        }
+
+        .project-container{
+            width: 90%;
+        }
+
+        .coding-description{
+            font-size: 1.5rem;
+            gap: 8px;
+        }
+
+
+}

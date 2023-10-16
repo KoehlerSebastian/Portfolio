@@ -1,4 +1,6 @@
+
 import { Component } from '@angular/core';
+import { Route } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
 
+
+
+openProject(link:string){
+  window.open(link , '_blank')
+}
 }
