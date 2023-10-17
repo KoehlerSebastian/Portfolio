@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
   scrollToContactSection() {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById('anchor-contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }

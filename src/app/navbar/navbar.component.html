@@ -1,10 +1,10 @@
 <div class="navbar-container">
     <div class="navbar-logo"><img src="./assets/img/logo.png"></div>
     <div class="navbar-links">
-        <a href="#about-me">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="#anchor-about-me">About me</a>
+        <a href="#anchor-skills">Skills</a>
+        <a href="#anchor-portfolio">Portfolio</a>
+        <a href="#anchor-contact">Contact</a>
     </div>
     <div class="burger-menu" (click)="toggleMobileMenu()">
         <div class="burger-icon" [ngClass]="{'open': isMenuOpen}">
@@ -18,10 +18,10 @@
     <div class="navbar-menu-mobile">
         <div class="close-icon" (click)="toggleMobileMenu()">&#10006;</div>
         <ul>
-            <li><a (click)="closeMenu()"href="#about-me">About me</a></li>
-            <li><a (click)="closeMenu()"href="#skills">Skills</a></li>
-            <li><a (click)="closeMenu()"href="#portfolio">Portfolio</a></li>
-            <li><a (click)="closeMenu()"href="#contact">Contact</a></li>
+            <li><a (click)="closeMenu()" href="#anchor-about-me">About me</a></li>
+            <li><a (click)="closeMenu()" href="#anchor-skills-mobile">Skills</a></li>
+            <li><a (click)="closeMenu()" href="#anchor-portfolio">Portfolio</a></li>
+            <li><a (click)="closeMenu()" href="#anchor-contact">Contact</a></li>
         </ul>
     </div>
 </div>

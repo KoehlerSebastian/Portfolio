@@ -1,41 +1,47 @@
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe und Transparenz anpassen */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 999; /* Z-Index-Wert anpassen, um sicherzustellen, dass das Overlay oben liegt */
-  }
-  
-  #impressum {
-    position: relative;
-    background: #fff; /* Hintergrundfarbe des Impressum-Bereichs anpassen */
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten für den Impressum-Bereich hinzufügen */
-    max-width: 80%; /* Maximale Breite des Impressum-Bereichs anpassen */
-    overflow: auto; /* Scrollbalken hinzufügen, wenn der Inhalt zu groß ist */
-  }
-  
-  .impressum-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 45px;
-    cursor: pointer;
-    padding: 0;
-    color: black;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Hintergrundfarbe und Transparenz anpassen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  /* Z-Index-Wert anpassen, um sicherzustellen, dass das Overlay oben liegt */
+}
+
+#impressum {
+  position: relative;
+  background: #fff;
+  /* Hintergrundfarbe des Impressum-Bereichs anpassen */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Schatten für den Impressum-Bereich hinzufügen */
+  max-width: 80%;
+  /* Maximale Breite des Impressum-Bereichs anpassen */
+  overflow: auto;
+  /* Scrollbalken hinzufügen, wenn der Inhalt zu groß ist */
+}
+
+.impressum-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 45px;
+  cursor: pointer;
+  padding: 0;
+  color: black;
+}

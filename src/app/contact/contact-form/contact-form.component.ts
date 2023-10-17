@@ -22,6 +22,7 @@ export class ContactFormComponent {
     const message = this.textField.nativeElement.value;
     const checkBox = this.checkBox.nativeElement.checked; // Überprüfen, ob die Checkbox aktiviert ist
 
+
     return name && email && message && checkBox; // Gibt true zurück, wenn alle Felder ausgefüllt und die Checkbox aktiviert ist
   }
 
@@ -35,7 +36,6 @@ export class ContactFormComponent {
     fd.append('email', email);
     fd.append('message', message);
 
-
     return fd;
   }
 
@@ -47,22 +47,49 @@ export class ContactFormComponent {
       try {
         await this.sendFormDataToServer(formData);
         sendButton.textContent = 'wird gesendet!';
-        this.showOverlay = true;
-        setTimeout(() => { this.showOverlay = false; }, 3000);
       } catch (error) {
         console.log("Error:", error);
       } finally {
         sendButton.disabled = false;
         sendButton.textContent = 'Nachricht senden';
+        this.showOverlay = true;
+        setTimeout(() => { this.showOverlay = false; }, 3000);
+        this.clearFormFields();
       }
     } else {
     }
   }
 
   async sendFormDataToServer(formData: FormData) {
-    await fetch('https://sebastian-koehler.developerakademie.net/send_mail/send_mail.php', {
+    await fetch('https://koehler-sebastian.de/send_mail/send_mail.php', {
       method: 'POST',
       body: formData
     });
+  }
+
+  clearFormFields() {
+    this.nameField.nativeElement.value = '';
+    this.emailField.nativeElement.value = '';
+    this.textField.nativeElement.value = '';
+    this.checkBox.nativeElement.checked = false;
+  }
+
+  addRedBorder() {
+    document.getElementById('checkBox')?.classList.add("red-border");
+  }
+
+  removeRedBorder() {
+    document.getElementById('checkBox')?.classList.remove("red-border");
+  }
+
+  checkCheckBox(){
+    const checked = this.checkBox.nativeElement.checked
+    if (!checked){
+      document.getElementById('checkBox')?.classList.add("red-border");
+      setTimeout(() => {
+        document.getElementById('checkBox')?.classList.remove("red-border");
+      }, 1000);
+
+    }else{}
   }
 }

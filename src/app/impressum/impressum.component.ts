@@ -7,6 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./impressum.component.scss']
 })
 export class ImpressumComponent {
-  constructor(private router: Router){
+  constructor(private router: Router) {
   }
 }

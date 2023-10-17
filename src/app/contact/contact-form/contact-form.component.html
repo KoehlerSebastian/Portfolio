@@ -14,15 +14,15 @@
 
   <div class="checkbox-wrapper-39">
     <label>
-      <input type="checkbox" required #checkBox />
-      <span class="checkbox"></span>
+      <input type="checkbox" #checkBox name="checkBox"/>
+      <span id="checkBox" class="checkbox"></span>
     </label>
     <div>Ich habe die <a routerLink="data-policy">Datenschutzerklärung</a> und erkläre mich mit der Verarbeitung meiner
       Daten wie beschrieben einverstanden.</div>
   </div>
 
 
-  <button class="btn-5" #sendButton>Nachricht senden</button>
+  <button (click)="checkCheckBox()" class="btn-5" #sendButton>Nachricht senden</button>
 
 </form>
 

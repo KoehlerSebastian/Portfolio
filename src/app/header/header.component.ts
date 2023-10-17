@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-scrollToContactSection() {
-    const contactSection = document.getElementById('contact');
+  scrollToContactSection() {
+    const contactSection = document.getElementById('anchor-contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }

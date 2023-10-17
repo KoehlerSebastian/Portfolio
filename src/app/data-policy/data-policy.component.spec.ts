@@ -1,21 +1,19 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, ElementRef, HostListener } from '@angular/core';
 
-import { DataPolicyComponent } from './data-policy.component';
+@Component({
+  selector: 'app-data-policy',
+  templateUrl: './data-policy.component.html',
+  styleUrls: ['./data-policy.component.scss']
+})
+export class DataPolicyComponent {
+  constructor(private elementRef: ElementRef) {}
 
-describe('DataPolicyComponent', () => {
-  let component: DataPolicyComponent;
-  let fixture: ComponentFixture<DataPolicyComponent>;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [DataPolicyComponent]
-    });
-    fixture = TestBed.createComponent(DataPolicyComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  @HostListener('document:click', ['$event'])
+  clickout(event: MouseEvent) {
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      event.preventDefault();
+      event.stopPropagation();
+      // Perform the necessary action here
+    }
+  }
+}

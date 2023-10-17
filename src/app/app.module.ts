@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScrollButtonComponent } from './scroll-button/scroll-button.component';
 import { ImpressPageComponent } from './impressum/impress-page/impress-page.component';
 import { DataPolicyComponent } from './data-policy/data-policy.component';
+import { OnlyForTrainingComponent } from './only-for-training/only-for-training.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DataPolicyComponent } from './data-policy/data-policy.component';
     ImpressumComponent,
     ScrollButtonComponent,
     ImpressPageComponent,
-    DataPolicyComponent
+    DataPolicyComponent,
+    OnlyForTrainingComponent
 
   ],
   imports: [
